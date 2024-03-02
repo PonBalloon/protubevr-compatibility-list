@@ -1,0 +1,30 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    cursor: default;
+}
+
+#gameTable td:not(:first-child), 
+#gameTable th:not(:first-child) {
+    text-align: center;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 123, 255, 0.8); /* Bootstrap primary color with transparency */
+    z-index: 1020; /* Ensure it's above other items */
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
